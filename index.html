@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
+    <style>
+        html, body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        #main{
+            background-color: #082841;
+            height: 100vh;
+        }
+        #personLogo{
+            width: 38.33%;
+        }
+        #mainInfo{
+            margin-left: 38.33%;
+            color: #fff;
+            font-size: 1.25em;
+            padding: 4.5% 17% 6.25% 6.67%;
+        }
+        #infoLabel, .header, .blockHeader{
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        #infoLabel p{
+            font-size: 2.5em;
+            line-height: 1.5;
+        }
+        #infoAdd{
+            text-align: justify;
+            margin-top: 26.25%;
+        }
+        .page{
+            clear: left;
+        }
+        .header{
+            font-size: 2.5em;
+            padding:7.36% 17.2% 0;
+        }
+        .content{
+            padding:2.6% 17.2% 0;
+        }
+        .expectationBlock{
+            background: linear-gradient(#E6F0F0, #E9F0E6);
+            position: relative;
+            padding: 32px;
+            float: left;
+            margin: 10px;
+            height: 200px;
+        }
+        .expectationBlock:nth-child(n){
+            min-width: 35%;
+            max-width: 55%;
+        }
+        .expectationBlock:nth-child(2n){
+            width: auto;
+        }
+        .blockFilling{
+            position: absolute;
+            bottom: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!-- <img src="img/logo.jpg" alt="my_logo" id="personLogo"> -->
+        <div id="personLogo"></div>
+        <div id="mainInfo">
+            <div id="infoLabel">Фронт-енд-разработчик
+                <p>Жуков Андрей</p>
+            </div>
+            <div id="infoAdd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur illum? Officia dolores vero vitae corporis magni at nemo aliquid est quasi ducimus in, laboriosam iste beatae necessitatibus nesciunt labore iure delectus sapiente perferendis ullam amet ut, exercitationem consequuntur minus. Assumenda ex suscipit dolore error ipsa commodi quas doloribus laboriosam.</div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="header">Ожидания от ШРИ</div>
+        <div class="content">
+            <div class="expectationBlock">
+                <div class="blockHeader">Lorem.</div>
+                <div class="blockFilling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a eligendi laboriosam asperiores alias doloremque.</div>
+            </div>
+            <div class="expectationBlock"><div class="blockHeader">lorem1</div>
+            <div class="blockFilling">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione unde modi dolorem iusto pariatur, excepturi voluptatum ullam autem dolorum aliquam impedit fugiat iste mollitia fuga eum, voluptatem consectetur. Iste, repellendus?</div></div>
+            <div class="expectationBlock"><div class="blockHeader">Lorem.</div>
+            <div class="blockFilling">Lorem ipsum dolor sit amet.</div></div>
+            <div class="expectationBlock"><div class="blockHeader">Lorem.</div>
+            <div class="blockFilling">Lorem ipsum dolor sit amet.</div></div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="header">Мои работы</div>
+        <div class="content">
+            <div class="workBlock"></div>
+            <div class="workBlock"></div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="header">Контактная информация</div>
+        <div class="content">
+            <div id="linksBlock"></div>
+            <div id="mailBlock">
+                <form action="" id="docSubmit">
+                    <input type="text" name="prsnName" id="prsnName">
+                    <input type="text" name="prsnEmail" id="prsnEmail">
+                    <input type="text" name="prsnMsg" id="prsnMsg">
+                    <input type="file" name="prsnDoc" id="prsnDoc">
+                    <input type="button" value="Отправить" id="sendDoc">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
