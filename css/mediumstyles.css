@@ -1,19 +1,26 @@
-#main {
-    z-index: 110;
-    border-radius: 550px;
-}
-
 #mainInfo{
-    margin-left: 0%;
-    border-radius: 550px;
+    border-radius: 192px;
+    background-size: cover;
+    background-position: 45% 0%;
+    height: 384px;
+    width: 384px;
+    margin: 224px auto 75px;
+
 }
 
-#main .blockHeader, #main .blockContent{
+#main{
+    width: 100%;
+}
+
+#textLayout .blockHeader, #textLayout .blockContent{
     margin: 65px auto;
     padding-left: 0;
     max-width: 545px;
     text-align: center;
 }
+ #textLayout .blockContent{
+    margin-top:500px;
+ }
 
 .header {
     width: 100%;
