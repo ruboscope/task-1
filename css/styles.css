@@ -1,0 +1,285 @@
+html, body, input, textarea, .blockHeader a {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#main {
+    color: #fff;
+    font-size: 1.25em;
+    position: relative;
+    background: url("../img/logo.jpg") no-repeat; 
+    background-position: 0 50%;
+    background-size: 550px 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#mainInfo {
+    position: absolute;
+    background-color: #082841;
+    height: 100%;
+    width: 100%;
+    margin-left: 38%;
+}
+
+#main .blockHeader,
+.header,
+.blockHeader,
+label[for="prsnDoc"],
+#sendDoc {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 29px;
+}
+
+#main .blockContent {
+    text-align: justify;
+}
+
+#main .blockHeader, #main .blockContent {
+    z-index: 2;
+    width: 945px;
+    margin: 65px auto;
+    padding-left: 400px;
+}
+
+#main .blockHeader p:first-child{
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+#main .blockHeader p:last-child {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.page {
+    clear: left;
+    padding-bottom:50px;
+    padding-top: 25px
+}
+
+.header {
+    font-size: 2.5em;
+    margin: 80px auto 40px;
+    width: 945px;
+}
+
+.content {
+    width: 945px;
+    margin: 0px auto;
+}
+.page:first-child .content{
+    padding-top: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.waitBlock {
+    padding: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+    height: 250px;
+}
+
+.waitBlock:nth-child(2n+1) {
+    max-width: 55%;
+    min-width: 35%;
+    margin-right: 10px;
+}
+
+.waitBlock:nth-child(2n) {
+    flex: 1;
+}
+
+.blockHeader {
+    width: 100%;
+}
+.blockHeader a{
+    display: block;
+    text-decoration: none;
+    font-weight: normal;
+    padding-top: 8px; 
+    color: #DD3E18;
+}
+
+.blockContent {
+    align-self: flex-end;
+}
+
+.jobBlock {
+    margin-bottom: 145px;
+}
+
+.slider {
+    width: 66.67%;
+    height: 384px;
+    position: relative;
+}
+
+.right .slider, .left .descr{
+    order: 1;
+}
+.right .descr, .left .slider{
+    order: 0;
+}
+
+.descr {
+    display: flex;
+    flex-flow: row wrap;
+    width: 33%;
+}
+.right .descr {
+    padding-right: 96px;
+
+}
+
+.left .descr {
+    padding-left: 96px;
+
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.set1:nth-child(1) {
+    background-image: url('../img/job1_1.png');
+}
+.set1:nth-child(2) {
+    background-image: url('../img/job1_2.png');
+}
+
+.set1:nth-child(3) {
+    background-image: url('../img/job1_3.png');
+}
+.set1:nth-child(4) {
+    background-image: url('../img/job1_4.png');
+}
+.set1:nth-child(5) {
+    background-image: url('../img/job1_5.png');
+}
+
+.set2:nth-child(1) {
+    background-image: url('../img/job2_1.png');
+}
+.set2:nth-child(2) {
+    background-image: url('../img/job2_2.png');
+}
+.set2:nth-child(3) {
+    background-image: url('../img/job2_3.png');
+}
+.set2:nth-child(4) {
+    background-image: url('../img/job2_4.png');
+}
+.set2:nth-child(5) {
+    background-image: url('../img/job2_5.png');
+}
+
+[id^='slideBtn'] {
+    display: none;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+}
+.right .controls {
+    transform: translate(-24px, -50%);
+}
+.left .controls{
+    right:0%;
+    transform: translate(24px, -50%);
+}
+
+.controls label {
+    display: block;
+    height: 8px;
+    width: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #000;
+}
+
+
+input[name='slideBtn1']:nth-child(1):checked ~ .gallery .set1:nth-child(1),
+input[name='slideBtn1']:nth-child(2):checked ~ .gallery .set1:nth-child(2),
+input[name='slideBtn1']:nth-child(3):checked ~ .gallery .set1:nth-child(3),
+input[name='slideBtn1']:nth-child(4):checked ~ .gallery .set1:nth-child(4),
+input[name='slideBtn1']:nth-child(5):checked ~ .gallery .set1:nth-child(5),
+input[name='slideBtn2']:nth-child(1):checked ~ .gallery .set2:nth-child(1),
+input[name='slideBtn2']:nth-child(2):checked ~ .gallery .set2:nth-child(2),
+input[name='slideBtn2']:nth-child(3):checked ~ .gallery .set2:nth-child(3),
+input[name='slideBtn2']:nth-child(4):checked ~ .gallery .set2:nth-child(4),
+input[name='slideBtn2']:nth-child(5):checked ~ .gallery .set2:nth-child(5) {
+    opacity: 1;
+}
+input[name='slideBtn1']:nth-child(1):checked ~ .controls label.slideBtn1:nth-child(1),
+input[name='slideBtn1']:nth-child(2):checked ~ .controls label.slideBtn1:nth-child(2),
+input[name='slideBtn1']:nth-child(3):checked ~ .controls label.slideBtn1:nth-child(3)
+input[name='slideBtn1']:nth-child(4):checked ~ .controls label.slideBtn1:nth-child(4),
+input[name='slideBtn1']:nth-child(5):checked ~ .controls label.slideBtn1:nth-child(5),
+input[name='slideBtn2']:nth-child(1):checked ~ .controls label.slideBtn2:nth-child(1),
+input[name='slideBtn2']:nth-child(2):checked ~ .controls label.slideBtn2:nth-child(2),
+input[name='slideBtn2']:nth-child(3):checked ~ .controls label.slideBtn2:nth-child(3),
+input[name='slideBtn2']:nth-child(4):checked ~ .controls label.slideBtn2:nth-child(4),
+input[name='slideBtn2']:nth-child(5):checked ~ .controls label.slideBtn2:nth-child(5) {
+    background-color: #DD3E18;
+}
+
+#contactBlock, .waitBlock{
+    background: linear-gradient(#E6F0F0, #E9F0E6);
+}
+#linkBlock{
+    float: left;
+    display: inline-block;
+    width: 40%;
+    padding-right: 95px;
+}
+#mailBlock{
+    display: inline-block;
+    width: 60%
+}
+#prsnName, #prsnEmail, #prsnMsg, #sendDoc{
+    display: block;
+    width: 100%;
+    padding: 13px 16px;
+    margin-bottom: 24px;
+    border: none;
+}
+#sendDoc{
+    color:#fff;
+    background-color: #DD3E18;
+    font-size: 1em;
+}
+label[for="prsnDoc"]{
+    display: block;
+    margin-bottom: 24px;
+    color: #DD3E18;
+    font-size: 1em;
+}
+#prsnDoc{
+    display: none;
+    
+}
+.links a{
+    text-decoration: none;
+    color: #000;
+}
+#linkBlock .links{
+    margin: 12px 0;
+}
+

@@ -1,0 +1,43 @@
+#main {
+    z-index: 110;
+    border-radius: 550px;
+}
+
+#mainInfo{
+    margin-left: 0%;
+    border-radius: 550px;
+}
+
+#main .blockHeader, #main .blockContent{
+    margin: 65px auto;
+    padding-left: 0;
+    max-width: 545px;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    padding:0 32px;
+}
+ .content{
+    width: 100%;
+    padding:0 32px;
+ }
+
+ .row.jobBlock{
+     flex-direction: column;
+ }
+.descr{
+    width: 100%;
+    flex-direction: row;
+}
+
+
+
+
+
+
+#linkBlock, #mailBlock{
+    width: 100%;
+    padding:32px;
+}

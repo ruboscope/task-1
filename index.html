@@ -1,120 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
     <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
-    <style>
-        html, body{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 16px;
-            line-height: 24px;
-        }
-        #main{
-            background-color: #082841;
-            height: 100vh;
-        }
-        #personLogo{
-            width: 38.33%;
-        }
-        #mainInfo{
-            margin-left: 38.33%;
-            color: #fff;
-            font-size: 1.25em;
-            padding: 4.5% 17% 6.25% 6.67%;
-        }
-        #infoLabel, .header, .blockHeader{
-            font-size: 1.5em;
-            font-weight: bold;
-            font-family: Helvetica, Arial, sans-serif;
-        }
-        #infoLabel p{
-            font-size: 2.5em;
-            line-height: 1.5;
-        }
-        #infoAdd{
-            text-align: justify;
-            margin-top: 26.25%;
-        }
-        .page{
-            clear: left;
-        }
-        .header{
-            font-size: 2.5em;
-            padding:7.36% 17.2% 0;
-        }
-        .content{
-            padding:2.6% 17.2% 0;
-        }
-        .expectationBlock{
-            background: linear-gradient(#E6F0F0, #E9F0E6);
-            position: relative;
-            padding: 32px;
-            float: left;
-            margin: 10px;
-            height: 200px;
-        }
-        .expectationBlock:nth-child(n){
-            min-width: 35%;
-            max-width: 55%;
-        }
-        .expectationBlock:nth-child(2n){
-            width: auto;
-        }
-        .blockFilling{
-            position: absolute;
-            bottom: 32px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/mediumstyles.css">
 </head>
+
 <body>
     <div id="main">
-        <!-- <img src="img/logo.jpg" alt="my_logo" id="personLogo"> -->
-        <div id="personLogo"></div>
+        <!-- <div id="personLogo"></div> -->
         <div id="mainInfo">
-            <div id="infoLabel">Фронт-енд-разработчик
-                <p>Жуков Андрей</p>
-            </div>
-            <div id="infoAdd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur illum? Officia dolores vero vitae corporis magni at nemo aliquid est quasi ducimus in, laboriosam iste beatae necessitatibus nesciunt labore iure delectus sapiente perferendis ullam amet ut, exercitationem consequuntur minus. Assumenda ex suscipit dolore error ipsa commodi quas doloribus laboriosam.</div>
         </div>
+        <div class="blockHeader">
+            <p>Фронт-енд-разработчик</p>
+            <p>Жуков Андрей</p>
+        </div>
+        <div class="blockContent">Меня зовут Андрей. Мне 25 лет. Я увлекаюсь фронт-ендом 5 лет. Работаю в Банке, занимаюсь разработкой и сопровождением Интернет-Банка. Очень хотел бы попасть на данный курс для углубленного изучения области разработки интерфейсов, а также для отработки полученных знаний на практике. </div>
     </div>
     <div class="page">
         <div class="header">Ожидания от ШРИ</div>
         <div class="content">
-            <div class="expectationBlock">
-                <div class="blockHeader">Lorem.</div>
-                <div class="blockFilling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a eligendi laboriosam asperiores alias doloremque.</div>
+            <div class="row">
+                <div class="waitBlock">
+                    <div class="blockHeader">Глубокие знания</div>
+                    <div class="blockContent">Знания никогда не бывают лишними. А знания от профессионалов в свое области - бесценны. Уверен, что курс позволит получить объемный и актуальный багаж знаний, который будет необходим для более продуктивной и осознанной веб-разработки.</div>
+                </div>
+                <div class="waitBlock">
+                    <div class="blockHeader">Практика</div>
+                    <div class="blockContent">Можно изучить десятки, сотни книг по разработке, но без должного количества практики книги так и продолжают пылиться. На полках и в памяти. Думаю, что практики будет предостаточно.</div>
+                </div>
             </div>
-            <div class="expectationBlock"><div class="blockHeader">lorem1</div>
-            <div class="blockFilling">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione unde modi dolorem iusto pariatur, excepturi voluptatum ullam autem dolorum aliquam impedit fugiat iste mollitia fuga eum, voluptatem consectetur. Iste, repellendus?</div></div>
-            <div class="expectationBlock"><div class="blockHeader">Lorem.</div>
-            <div class="blockFilling">Lorem ipsum dolor sit amet.</div></div>
-            <div class="expectationBlock"><div class="blockHeader">Lorem.</div>
-            <div class="blockFilling">Lorem ipsum dolor sit amet.</div></div>
+            <div class="row">
+                <div class="waitBlock">
+                    <div class="blockHeader">Помощь</div>
+                    <div class="blockContent">В любой непонятной ситуации не стоит тревожить тренеров и учителей, но при долгом "стопоре" нужный совет в нужную минуту может сэкономить лишнее время и нервы. PROFIT всем!!!</div>
+                </div>
+                <div class="waitBlock">
+                    <div class="blockHeader">Новые знакомства</div>
+                    <div class="blockContent">В современном мире без знакомств никуда. На курс отбирают лучших. Почему бы не взять у каждого по чуть-чуть знаний и стать лучше самому. Самому делиться знаниями ОБЯЗАТЕЛЬНО! В хорошей компании и учиться будет легче.</div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="page">
         <div class="header">Мои работы</div>
         <div class="content">
-            <div class="workBlock"></div>
-            <div class="workBlock"></div>
+            <div class="row jobBlock right">
+
+                <div class="slider">
+                    <input id="sbtn1_1" type="radio" name="slideBtn1" checked>
+                    <input id="sbtn1_2" type="radio" name="slideBtn1">
+                    <input id="sbtn1_3" type="radio" name="slideBtn1">
+                    <input id="sbtn1_4" type="radio" name="slideBtn1">
+                    <input id="sbtn1_5" type="radio" name="slideBtn1">
+                    <div class="gallery">
+                        <div class="img set1"></div>
+                        <div class="img set1"></div>
+                        <div class="img set1"></div>
+                        <div class="img set1"></div>
+                        <div class="img set1"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="sbtn1_1" class="slideBtn1"></label>
+                        <label for="sbtn1_2" class="slideBtn1"></label>
+                        <label for="sbtn1_3" class="slideBtn1"></label>
+                        <label for="sbtn1_4" class="slideBtn1"></label>
+                        <label for="sbtn1_5" class="slideBtn1"></label>
+                    </div>
+                </div>
+
+                <div class="descr">
+                    <div class="blockHeader"><p>БелВЭБ 24</p>
+                        <a href="https://www.belveb24.by/">belveb24.by</a>
+                    </div>
+                    <div class="blockContent">Новый сайт Интернет-Банка. Разрабатывался совместно с команией Abiatec. Тяжело, медленно, но уверенно данный сайт становится основным для клиентов. И становится лучше.
+                    </div>
+                </div>
+            </div>
+            <div class="row jobBlock left">
+                <div class="slider">
+                    <input id="sbtn2_1" type="radio" name="slideBtn2" checked>
+                    <input id="sbtn2_2" type="radio" name="slideBtn2">
+                    <input id="sbtn2_3" type="radio" name="slideBtn2">
+                    <input id="sbtn2_4" type="radio" name="slideBtn2">
+                    <input id="sbtn2_5" type="radio" name="slideBtn2">
+                    <div class="gallery">
+                        <div class="img set2"></div>
+                        <div class="img set2"></div>
+                        <div class="img set2"></div>
+                        <div class="img set2"></div>
+                        <div class="img set2"></div>
+                    </div>
+                    <div class="controls">
+                        <label for="sbtn2_1" class="slideBtn2"></label>
+                        <label for="sbtn2_2" class="slideBtn2"></label>
+                        <label for="sbtn2_3" class="slideBtn2"></label>
+                        <label for="sbtn2_4" class="slideBtn2"></label>
+                        <label for="sbtn2_5" class="slideBtn2"></label>
+                        
+                    </div>
+                </div>
+                <div class="descr">
+                    <div class="blockHeader">
+                        <p>БелВЭБ 24 Mobile</p>
+                        <a href="https://www.belveb24.by/imobile/">belveb24.by/imobile/</a>
+                    </div>
+                    <div class="blockContent">Старый сайт(но все еще живой) Интерне-Банка. Писался еще на JQuery Mobile. Он как автомат Калашникова - такой же надежный и простой в обращении. К удивлению, но до сих пор очень популярный среди большинства клиентов.</div>
+            </div>
         </div>
     </div>
-    <div class="page">
+    <div class="page" id="contactBlock">
         <div class="header">Контактная информация</div>
         <div class="content">
-            <div id="linksBlock"></div>
+            <div id="linkBlock">
+                <p>Если данное портфолио Вас заинтересовало, то можете посмотреть мой гитхаб(пока там не очень много всего. Но это пока...), а также можете связаться со мной во ВКонтакте или написать на почту.</p>
+                <p> С уважением, Жуков Андрей</p>
+                <br>
+                <p> Ссылки на мои соцсети:</p>
+                <div class="links"><a href="https://github.com/ruboscope" target="_blank"><i class="fab fa-github" style="font-size:24px">&nbsp;</i>Github</a></div>
+                <div class="links"><a href="https://vk.com/id222896387" target="_blank"><i class="fab fa-vk" style="font-size:24px">&nbsp;</i>Вконтакте</a></div>
+            </div>
             <div id="mailBlock">
-                <form action="" id="docSubmit">
-                    <input type="text" name="prsnName" id="prsnName">
-                    <input type="text" name="prsnEmail" id="prsnEmail">
-                    <input type="text" name="prsnMsg" id="prsnMsg">
-                    <input type="file" name="prsnDoc" id="prsnDoc">
-                    <input type="button" value="Отправить" id="sendDoc">
+                <form action="mailto:ruboscope@gmail.com" method="post" enctype="text/plain" id="docSubmit">
+                    <input type="text" name="prsnName" id="prsnName" placeholder="Имя">
+                    <input type="text" name="prsnEmail" id="prsnEmail" placeholder="Почтовый ящик">
+                    <textarea rows="11" cols="100" name="prsnMsg" id="prsnMsg" placeholder="Сообщение"></textarea>
+                    <label for="prsnDoc"><i class="fa fa-file" style="font-size:24px">&nbsp;</i>Прикрепить ТЗ</label><input type="file" name="prsnDoc" id="prsnDoc" value="">
+                    <input type="submit" value="Отправить" id="sendDoc">
                 </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>
